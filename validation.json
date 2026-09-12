@@ -1,0 +1,238 @@
+{
+  "pages": 21,
+  "legal_lines_checked": 33,
+  "positions": [
+    {
+      "label": "Lesson 1 - free knight",
+      "start_fen": "6k1/5ppp/8/4n3/8/5N2/5PPP/6K1 w - - 0 1",
+      "san": "Nxe5",
+      "end_fen": "6k1/5ppp/8/4N3/8/8/5PPP/6K1 b - - 0 1",
+      "assertion": "legal line"
+    },
+    {
+      "label": "Lesson 1 - count the full exchange",
+      "start_fen": "6k1/5ppp/3p4/4p3/8/2B2N2/5PPP/6K1 w - - 0 1",
+      "san": "Nxe5 dxe5 Bxe5",
+      "end_fen": "6k1/5ppp/8/4B3/8/8/5PPP/6K1 b - - 0 2",
+      "assertion": "legal line"
+    },
+    {
+      "label": "Lesson 2 - pinned defender",
+      "start_fen": "4k3/4n3/8/3p4/5N2/8/5PPP/4R1K1 w - - 0 1",
+      "san": "Nxd5",
+      "end_fen": "4k3/4n3/8/3N4/8/8/5PPP/4R1K1 b - - 0 1",
+      "assertion": "legal line"
+    },
+    {
+      "label": "Lesson 2 - capture with check first",
+      "start_fen": "3qr1k1/5p1p/8/8/3n4/7P/5PP1/3QR1K1 w - - 0 1",
+      "san": "Rxe8+ Qxe8 Qxd4 Qe1+ Kh2",
+      "end_fen": "6k1/5p1p/8/8/3Q4/7P/5PPK/4q3 b - - 2 3",
+      "assertion": "legal line"
+    },
+    {
+      "label": "Lesson 2 - wrong move order",
+      "start_fen": "3qr1k1/5p1p/8/8/3n4/7P/5PP1/3QR1K1 w - - 0 1",
+      "san": "Qxd4 Qxd4 Rxe8+ Kg7",
+      "end_fen": "4R3/5pkp/8/8/3q4/7P/5PP1/6K1 w - - 1 3",
+      "assertion": "legal line"
+    },
+    {
+      "label": "Lesson 4 - release the tension",
+      "start_fen": "rnbqkb1r/ppp2ppp/4pn2/3p4/2PP4/2N2N2/PP2PPPP/R1BQKB1R b KQkq - 3 4",
+      "san": "Be7 cxd5 exd5",
+      "end_fen": "rnbqk2r/ppp1bppp/5n2/3p4/3P4/2N2N2/PP2PPPP/R1BQKB1R w KQkq - 0 6",
+      "assertion": "legal line"
+    },
+    {
+      "label": "Lesson 4 - maintain the tension",
+      "start_fen": "rnbqkb1r/ppp2ppp/4pn2/3p4/2PP4/2N2N2/PP2PPPP/R1BQKB1R b KQkq - 3 4",
+      "san": "Be7 Bg5",
+      "end_fen": "rnbqk2r/ppp1bppp/4pn2/3p2B1/2PP4/2N2N2/PP2PPPP/R2QKB1R b KQkq - 5 5",
+      "assertion": "legal line"
+    },
+    {
+      "label": "Lesson 5 - d-pawn recapture",
+      "start_fen": "r1bqkbnr/1ppp1ppp/p1B5/4p3/4P3/5N2/PPPP1PPP/RNBQK2R b KQkq - 0 4",
+      "san": "dxc6",
+      "end_fen": "r1bqkbnr/1pp2ppp/p1p5/4p3/4P3/5N2/PPPP1PPP/RNBQK2R w KQkq - 0 5",
+      "assertion": "legal line"
+    },
+    {
+      "label": "Lesson 5 - b-pawn recapture",
+      "start_fen": "r1bqkbnr/1ppp1ppp/p1B5/4p3/4P3/5N2/PPPP1PPP/RNBQK2R b KQkq - 0 4",
+      "san": "bxc6",
+      "end_fen": "r1bqkbnr/2pp1ppp/p1p5/4p3/4P3/5N2/PPPP1PPP/RNBQK2R w KQkq - 0 5",
+      "assertion": "legal line"
+    },
+    {
+      "label": "Lesson 5 - the e5 pawn is not free",
+      "start_fen": "r1bqkbnr/1pp2ppp/p1p5/4p3/4P3/5N2/PPPP1PPP/RNBQK2R w KQkq - 0 5",
+      "san": "Nxe5 Qd4 Nf3 Qxe4+",
+      "end_fen": "r1b1kbnr/1pp2ppp/p1p5/8/4q3/5N2/PPPP1PPP/RNBQK2R w KQkq - 0 7",
+      "assertion": "legal line"
+    },
+    {
+      "label": "Lesson 6 - playable winning pawn ending",
+      "start_fen": "2kq4/8/3QK3/4P3/8/8/8/8 w - - 0 1",
+      "san": "Qxd8+ Kxd8 Kf7 Kd7 e6+ Kd6 e7 Kd7 e8=Q+",
+      "end_fen": "4Q3/3k1K2/8/8/8/8/8/8 b - - 0 5",
+      "assertion": "legal line"
+    },
+    {
+      "label": "Lesson 6 - rook-pawn drawing trap",
+      "start_fen": "kq6/8/PK1Q4/8/8/8/8/8 w - - 0 1",
+      "san": "Qxb8+ Kxb8 a7+ Ka8 Ka6",
+      "end_fen": "k7/P7/K7/8/8/8/8/8 b - - 2 3",
+      "assertion": "stalemate"
+    },
+    {
+      "label": "Lesson 7 - last rook traded",
+      "start_fen": "4rk2/8/8/8/2B5/8/8/4R1K1 w - - 0 1",
+      "san": "Rxe8+ Kxe8",
+      "end_fen": "4k3/8/8/8/2B5/8/8/6K1 w - - 0 2",
+      "assertion": "dead"
+    },
+    {
+      "label": "Lesson 8 - capture causes stalemate",
+      "start_fen": "7k/8/5Kp1/6Q1/8/8/8/8 w - - 0 1",
+      "san": "Qxg6",
+      "end_fen": "7k/8/5KQ1/8/8/8/8/8 b - - 0 1",
+      "assertion": "stalemate"
+    },
+    {
+      "label": "Lesson 8 - capture preserves legal reply",
+      "start_fen": "7k/8/5Kp1/6Q1/8/8/8/8 w - - 0 1",
+      "san": "Kxg6 Kg8",
+      "end_fen": "6k1/8/6K1/6Q1/8/8/8/8 w - - 1 2",
+      "assertion": "legal line"
+    },
+    {
+      "label": "Lesson 8 - checkmate before material",
+      "start_fen": "6k1/5ppp/8/8/8/8/5PPP/3bR1K1 w - - 0 1",
+      "san": "Re8#",
+      "end_fen": "4R1k1/5ppp/8/8/8/8/5PPP/3b2K1 b - - 1 1",
+      "assertion": "mate"
+    },
+    {
+      "label": "Lesson 8 - ordinary capture",
+      "start_fen": "6k1/5ppp/8/8/8/8/5PPP/3bR1K1 w - - 0 1",
+      "san": "Rxd1",
+      "end_fen": "6k1/5ppp/8/8/8/8/5PPP/3R2K1 b - - 0 1",
+      "assertion": "legal line"
+    },
+    {
+      "label": "Exercise 01 - free bishop",
+      "start_fen": "6k1/5ppp/8/4b3/8/5N2/5PPP/6K1 w - - 0 1",
+      "san": "Nxe5",
+      "end_fen": "6k1/5ppp/8/4N3/8/8/5PPP/6K1 b - - 0 1",
+      "assertion": "legal line"
+    },
+    {
+      "label": "Exercise 02 - material ledger",
+      "start_fen": "6k1/5ppp/2p5/3p4/8/3R4/5PPP/3Q2K1 w - - 0 1",
+      "san": "Rxd5 cxd5 Qxd5",
+      "end_fen": "6k1/5ppp/8/3Q4/8/8/5PPP/6K1 b - - 0 2",
+      "assertion": "legal line"
+    },
+    {
+      "label": "Exercise 03 - pinned knight",
+      "start_fen": "2k5/2n5/4p3/8/3N4/8/5PPP/2R3K1 w - - 0 1",
+      "san": "Nxe6",
+      "end_fen": "2k5/2n5/4N3/8/8/8/5PPP/2R3K1 b - - 0 1",
+      "assertion": "legal line"
+    },
+    {
+      "label": "Exercise 04 - right move order",
+      "start_fen": "3qr1k1/5p1p/8/3n4/8/7P/3Q1PP1/4R1K1 w - - 0 1",
+      "san": "Rxe8+ Qxe8 Qxd5 Qe1+ Kh2",
+      "end_fen": "6k1/5p1p/8/3Q4/8/7P/5PPK/4q3 b - - 2 3",
+      "assertion": "legal line"
+    },
+    {
+      "label": "Exercise 04 - wrong move order",
+      "start_fen": "3qr1k1/5p1p/8/3n4/8/7P/3Q1PP1/4R1K1 w - - 0 1",
+      "san": "Qxd5 Qxd5 Rxe8+ Kg7",
+      "end_fen": "4R3/5pkp/8/3q4/8/7P/5PP1/6K1 w - - 1 3",
+      "assertion": "legal line"
+    },
+    {
+      "label": "Exercise 05 - trade and follow-up",
+      "start_fen": "r1bqkbnr/1ppp1ppp/p1n5/1B2p3/4P3/5N2/PPPP1PPP/RNBQK2R w KQkq - 0 4",
+      "san": "Bxc6 dxc6 Nxe5 Qd4 Nf3 Qxe4+",
+      "end_fen": "r1b1kbnr/1pp2ppp/p1p5/8/4q3/5N2/PPPP1PPP/RNBQK2R w KQkq - 0 7",
+      "assertion": "legal line"
+    },
+    {
+      "label": "Exercise 05 - retain the bishop",
+      "start_fen": "r1bqkbnr/1ppp1ppp/p1n5/1B2p3/4P3/5N2/PPPP1PPP/RNBQK2R w KQkq - 0 4",
+      "san": "Ba4",
+      "end_fen": "r1bqkbnr/1ppp1ppp/p1n5/4p3/B3P3/5N2/PPPP1PPP/RNBQK2R b KQkq - 1 4",
+      "assertion": "legal line"
+    },
+    {
+      "label": "Exercise 06 - release tension",
+      "start_fen": "rnbqk2r/ppp1bppp/4pn2/3p4/2PP4/2N2N2/PP2PPPP/R1BQKB1R w KQkq - 4 5",
+      "san": "cxd5 exd5",
+      "end_fen": "rnbqk2r/ppp1bppp/5n2/3p4/3P4/2N2N2/PP2PPPP/R1BQKB1R w KQkq - 0 6",
+      "assertion": "legal line"
+    },
+    {
+      "label": "Exercise 06 - develop",
+      "start_fen": "rnbqk2r/ppp1bppp/4pn2/3p4/2PP4/2N2N2/PP2PPPP/R1BQKB1R w KQkq - 4 5",
+      "san": "Bg5",
+      "end_fen": "rnbqk2r/ppp1bppp/4pn2/3p2B1/2PP4/2N2N2/PP2PPPP/R2QKB1R b KQkq - 5 5",
+      "assertion": "legal line"
+    },
+    {
+      "label": "Exercise 07 - queen recapture",
+      "start_fen": "3q2k1/5ppp/8/8/8/5b2/5PPP/3Q2K1 w - - 0 1",
+      "san": "Qxf3",
+      "end_fen": "3q2k1/5ppp/8/8/8/5Q2/5PPP/6K1 b - - 0 1",
+      "assertion": "legal line"
+    },
+    {
+      "label": "Exercise 07 - pawn recapture",
+      "start_fen": "3q2k1/5ppp/8/8/8/5b2/5PPP/3Q2K1 w - - 0 1",
+      "san": "gxf3",
+      "end_fen": "3q2k1/5ppp/8/8/8/5P2/5P1P/3Q2K1 b - - 0 1",
+      "assertion": "legal line"
+    },
+    {
+      "label": "Exercise 08 - dead position",
+      "start_fen": "2kr4/8/8/8/8/1B6/8/3R3K w - - 0 1",
+      "san": "Rxd8+ Kxd8",
+      "end_fen": "3k4/8/8/8/8/1B6/8/7K w - - 0 2",
+      "assertion": "dead"
+    },
+    {
+      "label": "Exercise 09 - stalemate",
+      "start_fen": "k7/8/1pK5/1Q6/8/8/8/8 w - - 0 1",
+      "san": "Qxb6",
+      "end_fen": "k7/8/1QK5/8/8/8/8/8 b - - 0 1",
+      "assertion": "stalemate"
+    },
+    {
+      "label": "Exercise 09 - preserve the win",
+      "start_fen": "k7/8/1pK5/1Q6/8/8/8/8 w - - 0 1",
+      "san": "Kxb6 Kb8",
+      "end_fen": "1k6/8/1K6/1Q6/8/8/8/8 w - - 1 2",
+      "assertion": "legal line"
+    },
+    {
+      "label": "Exercise 10 - mate",
+      "start_fen": "6k1/5ppp/8/8/8/8/5PPP/2bR2K1 w - - 0 1",
+      "san": "Rd8#",
+      "end_fen": "3R2k1/5ppp/8/8/8/8/5PPP/2b3K1 b - - 1 1",
+      "assertion": "mate"
+    },
+    {
+      "label": "Exercise 10 - ordinary capture",
+      "start_fen": "6k1/5ppp/8/8/8/8/5PPP/2bR2K1 w - - 0 1",
+      "san": "Rxc1",
+      "end_fen": "6k1/5ppp/8/8/8/8/5PPP/2R3K1 b - - 0 1",
+      "assertion": "legal line"
+    }
+  ],
+  "pdf_bytes": 295654
+}

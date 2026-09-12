@@ -1,0 +1,4 @@
+reportlab==5.0.1
+chess==1.11.2
+svglib==2.2.0
+pypdf>=5,<7
